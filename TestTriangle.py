@@ -40,12 +40,12 @@ class TestTriangles(unittest.TestCase):
 
     def testInvalidTrianglesA(self):
         self.assertEqual(
-            classifyTriangle(1, 2, 3), "InvalidInput", "1,2,3 should be invalid"
+            classifyTriangle(1, 2, 3), "NotATriangle", "1,2,3 should not be a triangle"
         )
 
     def testInvalidTrianglesB(self):
         self.assertEqual(
-            classifyTriangle(1, 2, 4), "InvalidInput", "1,2,4 should be invalid"
+            classifyTriangle(1, 2, 4), "NotATriangle", "1,2,4 should not be a triangle"
         )
 
     def testInvalidTrianglesC(self):
