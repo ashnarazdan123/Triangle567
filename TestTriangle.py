@@ -9,7 +9,7 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 
 import unittest
 
-from Triangle import classifyTriangle
+from Triangle import classifyTriangle, my_brand
 
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
@@ -65,6 +65,13 @@ class TestTriangles(unittest.TestCase):
             "1.5,6,7 should be invalid",
         )
 
+    def testInvalidTrianglesF(self):
+        self.assertEqual(
+            classifyTriangle(201, 201, 201),
+            "InvalidInput",
+            "201,201,201 should be invalid",
+        )
+
     def testIsocelesTrianglesA(self):
         self.assertEqual(
             classifyTriangle(3, 3, 1), "Isoceles", "3,3,1 should be isosceles"
@@ -87,5 +94,6 @@ class TestTriangles(unittest.TestCase):
 
 
 if __name__ == "__main__":
+    my_brand()
     print("Running unit tests")
     unittest.main()

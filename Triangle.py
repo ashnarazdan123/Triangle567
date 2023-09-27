@@ -8,6 +8,19 @@ The primary goal of this file is to demonstrate a simple python program to class
 @author: jrr
 @author: rk
 """
+import datetime
+
+
+def my_brand():
+    assignment = "HW-2"
+    date = datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+    print(
+        "=*=*=*= Ashna Razdan =*=*=*=\n=*=*=*= Course 2023S-SSW567 =*=*=*=\n=*=*=* "
+        + assignment
+        + " =*=*=*=\n =*=*=*= "
+        + date
+        + " =*=*=*="
+    )
 
 
 def classifyTriangle(a, b, c):
