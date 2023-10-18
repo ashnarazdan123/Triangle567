@@ -8,11 +8,10 @@ The primary goal of this file is to demonstrate unittest implementation for tria
 
 import unittest
 
-from triangle import classify_triangle, my_brand
+from triangle_program import classify_triangle, my_brand
 
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
-
 
 
 class TestTriangles(unittest.TestCase):
